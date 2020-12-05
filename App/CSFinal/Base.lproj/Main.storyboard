@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Homepage View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Homepage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HomepageViewController" customModule="CSFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Better Covid Tracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoZ-7C-210">
+                                <rect key="frame" x="34" y="44" width="347.5" height="26.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26.5" id="lde-25-UmN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="X37-xW-5dU">
+                                <rect key="frame" x="30" y="80.5" width="354" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDW-Ze-HzW">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="30"/>
+                                        <color key="backgroundColor" red="0.083772189915180206" green="0.48677414655685425" blue="0.7276729941368103" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="L1P-e3-ha2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Select a County">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectCountyClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lih-US-sQM"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKk-Y3-1UC">
+                                        <rect key="frame" x="0.0" y="30" width="354" height="30"/>
+                                        <color key="backgroundColor" red="0.069693014025688171" green="0.60224628448486328" blue="0.83527368307113647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Qhw-XG-kSs"/>
+                                        </constraints>
+                                        <state key="normal" title="Ada">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="countyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AWl-uu-dqu"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGC-Pa-PCm">
+                                        <rect key="frame" x="0.0" y="60" width="354" height="30"/>
+                                        <color key="backgroundColor" red="0.069693014025688171" green="0.60224628448486328" blue="0.83527368307113647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="SeN-Xh-Gnh"/>
+                                        </constraints>
+                                        <state key="normal" title="Canyon">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="countyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dKG-ku-shR"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ZH-zw-D3U">
+                                        <rect key="frame" x="0.0" y="90" width="354" height="30"/>
+                                        <color key="backgroundColor" red="0.069693014025688171" green="0.60224628448486328" blue="0.83527368307113647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="RAp-hU-lle"/>
+                                        </constraints>
+                                        <state key="normal" title="Boise">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="countyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SfC-Vc-QgC"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nD-uf-9Q9">
+                                        <rect key="frame" x="0.0" y="120" width="354" height="30"/>
+                                        <color key="backgroundColor" red="0.069693014025688171" green="0.60224628448486328" blue="0.83527368307113647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="mRq-xP-Q72"/>
+                                        </constraints>
+                                        <state key="normal" title="Payette">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="countyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bMe-TY-ZNI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="9nD-uf-9Q9" secondAttribute="trailing" id="1mW-VO-BPM"/>
+                                    <constraint firstItem="lGC-Pa-PCm" firstAttribute="leading" secondItem="X37-xW-5dU" secondAttribute="leading" id="EUJ-3s-AIA"/>
+                                    <constraint firstAttribute="trailing" secondItem="8ZH-zw-D3U" secondAttribute="trailing" id="ExS-5r-NkY"/>
+                                    <constraint firstItem="8ZH-zw-D3U" firstAttribute="leading" secondItem="X37-xW-5dU" secondAttribute="leading" id="JGz-gn-QbN"/>
+                                    <constraint firstItem="ZKk-Y3-1UC" firstAttribute="top" secondItem="uDW-Ze-HzW" secondAttribute="bottom" id="JZR-OS-l57"/>
+                                    <constraint firstAttribute="trailing" secondItem="uDW-Ze-HzW" secondAttribute="trailing" id="OmP-3o-Yc6"/>
+                                    <constraint firstItem="lGC-Pa-PCm" firstAttribute="top" secondItem="ZKk-Y3-1UC" secondAttribute="bottom" id="PSR-B8-9U7"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZKk-Y3-1UC" secondAttribute="trailing" id="PeI-OV-G96"/>
+                                    <constraint firstItem="8ZH-zw-D3U" firstAttribute="top" secondItem="lGC-Pa-PCm" secondAttribute="bottom" id="VAJ-oF-1ht"/>
+                                    <constraint firstItem="ZKk-Y3-1UC" firstAttribute="leading" secondItem="X37-xW-5dU" secondAttribute="leading" id="VJH-pz-52q"/>
+                                    <constraint firstItem="9nD-uf-9Q9" firstAttribute="leading" secondItem="X37-xW-5dU" secondAttribute="leading" id="VMc-5j-OEE"/>
+                                    <constraint firstAttribute="trailing" secondItem="lGC-Pa-PCm" secondAttribute="trailing" id="W6a-71-l58"/>
+                                    <constraint firstItem="uDW-Ze-HzW" firstAttribute="leading" secondItem="X37-xW-5dU" secondAttribute="leading" id="gZJ-jP-b77"/>
+                                    <constraint firstItem="9nD-uf-9Q9" firstAttribute="top" secondItem="8ZH-zw-D3U" secondAttribute="bottom" id="nUE-bw-2Fp"/>
+                                    <constraint firstItem="uDW-Ze-HzW" firstAttribute="top" secondItem="X37-xW-5dU" secondAttribute="top" id="u4h-Fu-NMH"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="adaCountyGraph" translatesAutoresizingMaskIntoConstraints="NO" id="94c-0s-fhF">
+                                <rect key="frame" x="25" y="163" width="364" height="516"/>
+                                <accessibility key="accessibilityConfiguration" identifier="graph" label="graph"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="516" id="iIS-fS-6S4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ada County Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FE-h7-bWd">
+                                <rect key="frame" x="30" y="134" width="354" height="20.5"/>
+                                <accessibility key="accessibilityConfiguration" identifier="gLabel" label="gLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data supplied from https://covid.jesse-riggs.com and parsed for Ada" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yn2-DD-f6M">
+                                <rect key="frame" x="30" y="798" width="359" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="XAC-ex-On1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X37-xW-5dU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="EGm-5c-aOK"/>
+                            <constraint firstItem="Yn2-DD-f6M" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="1" id="FwE-jr-R6R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4FE-h7-bWd" secondAttribute="trailing" constant="30" id="Gws-Pd-Ync"/>
+                            <constraint firstItem="JoZ-7C-210" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TJZ-Ni-PDz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="94c-0s-fhF" secondAttribute="trailing" constant="25" id="Wip-Ve-akn"/>
+                            <constraint firstItem="JoZ-7C-210" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="Xg8-w1-o2F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yn2-DD-f6M" secondAttribute="trailing" constant="25" id="fCj-qC-oin"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X37-xW-5dU" secondAttribute="trailing" constant="30" id="fir-F7-tZy"/>
+                            <constraint firstItem="Yn2-DD-f6M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="hNc-7p-MAI"/>
+                            <constraint firstItem="4FE-h7-bWd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="jCa-gN-0nG"/>
+                            <constraint firstItem="X37-xW-5dU" firstAttribute="top" secondItem="JoZ-7C-210" secondAttribute="bottom" constant="10" id="kzH-A5-MtX"/>
+                            <constraint firstItem="94c-0s-fhF" firstAttribute="top" secondItem="4FE-h7-bWd" secondAttribute="bottom" constant="8.5" id="nJX-iZ-pgn"/>
+                            <constraint firstItem="94c-0s-fhF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="sem-9M-28n"/>
+                            <constraint firstItem="4FE-h7-bWd" firstAttribute="top" secondItem="X37-xW-5dU" secondAttribute="bottom" constant="23.5" id="wVd-sn-w3i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="footerLabel" destination="Yn2-DD-f6M" id="fjl-3F-tgZ"/>
+                        <outlet property="graph" destination="94c-0s-fhF" id="apy-4m-KDg"/>
+                        <outlet property="graphLabel" destination="4FE-h7-bWd" id="esf-8d-mOh"/>
+                        <outlet property="titleLabel" destination="JoZ-7C-210" id="r37-wY-kOu"/>
+                        <outletCollection property="CityButtons" destination="ZKk-Y3-1UC" collectionClass="NSMutableArray" id="V6M-KK-cOD"/>
+                        <outletCollection property="CityButtons" destination="ZKk-Y3-1UC" collectionClass="NSMutableArray" id="tVp-YH-85A"/>
+                        <outletCollection property="CityButtons" destination="lGC-Pa-PCm" collectionClass="NSMutableArray" id="d5A-oK-TNy"/>
+                        <outletCollection property="CityButtons" destination="8ZH-zw-D3U" collectionClass="NSMutableArray" id="TCh-ma-uEd"/>
+                        <outletCollection property="CityButtons" destination="9nD-uf-9Q9" collectionClass="NSMutableArray" id="Kpo-CA-TBZ"/>
+                        <outletCollection property="CityButtons" destination="ZKk-Y3-1UC" collectionClass="NSMutableArray" id="8Ja-Xy-StB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15.942028985507248" y="79.6875"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sc2-KY-T5r">
+            <objects>
+                <viewController id="BAs-L3-1Mr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="36k-d0-D1K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="tTW-v7-vbd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ON-KG-7NY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="658" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="adaCountyGraph" width="1313" height="1049"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
