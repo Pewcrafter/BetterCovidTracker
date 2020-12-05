@@ -26,6 +26,11 @@ API Endpoints
 
 /state/confirmed /state/deaths /state/confirmed/population /state/deaths/population /state/dpc (Deaths per Capita)
 
+## iOS App
+The Better Covid Tracker app utilizes CocoaPods to generate amazing graphs from the data provided by our backend API. To use the app, simply download the App file and install it on an iOS device, or download it from the app store (this option is still in the works)!
+
+[&#10149; Application Demo](https://www.youtube.com/watch?v=3cgpXtcDafk "Application Demo")
+
 ## Web Frontend
 Better CoVid Tracker utilizes the power of React JS to build comprehensive presentations of US CoVid-19 data. Follow the links to learn about BCT features, play a live version of BCT, or build and deploy your own copy.
 
