@@ -30,6 +30,7 @@ API Endpoints
 The Better Covid Tracker app utilizes CocoaPods to generate amazing graphs from the data provided by our backend API. To use the app, simply download the App file and install it on an iOS device, or download it from the app store (this option is still in the works)!
 
 [&#10149; Download the App](https://github.com/Pewcrafter/BetterCovidTracker/tree/master/App "App directory")
+
 [&#10149; Application Demo](https://www.youtube.com/watch?v=3cgpXtcDafk "Application Demo")
 
 ## Web Frontend
