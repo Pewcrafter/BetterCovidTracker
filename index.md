@@ -1,7 +1,7 @@
 # Welcome To The Better CoVid Tracker GitHub Page
 Better CoVid Tracker is built on a philosophy of objective accuracy to bring current information to the public.
 
-![Future Video](./assets/images/FutureVideo.png "Future Video Goes Here")
+<iframe width="994" height="559" src="https://www.youtube.com/embed/VftNskW37SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Welcome to Covid Tracker Backend
 
